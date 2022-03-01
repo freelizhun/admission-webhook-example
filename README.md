@@ -30,3 +30,5 @@ Build and push docker image
 
 We have a blog post that explains webhooks in depth with the help of this example. Check [it](https://www.qikqiak.com/post/k8s-admission-webhook/) out!
 
+## 另外一个关于`ValidatingAdmissionWebhook`例子
+请[参考](https://docs.giantswarm.io/advanced/custom-admission-controller/)
