@@ -32,3 +32,10 @@ We have a blog post that explains webhooks in depth with the help of this exampl
 
 ## 另外一个关于`ValidatingAdmissionWebhook`例子
 请[参考](https://docs.giantswarm.io/advanced/custom-admission-controller/)
+
+## ingressClass
+ingressclass概念：
+* 安装Ingress Controller 时可以指定参数 -ingress-class <string > ，默认是nginx
+* 这个参数指定的就是这个ingress控制器是属于那个IngressClass
+* 当创建一个ingress时，通过 spec.ingressClassName: <string > 来指定这个ingress属于那个IngressClass，属于那个ingress控制器
+* 在IngressClass资源上将annotations ingressclass.kubernetes.io/is-default-class设置 为true，将确保未指定ingressClassName新的Ingress分配此默认值IngressClass。
